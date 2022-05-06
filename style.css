@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.game-container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+.keyboard-container {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.keyboard-container button {
+    width: 60px;
+    height: 58px;
+    background-color: black;
+    border: 1px solid white;
+    margin: 4px;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+}
+
+
