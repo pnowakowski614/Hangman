@@ -9,6 +9,11 @@ header {
     text-align: center;
 }
 
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+ }
+
 .keyboard-container {
     width: 700px;
     display: flex;

@@ -83,12 +83,17 @@ function playGame() {
                 addColorToKey(addedLetter, "green-background");
                 if (equals(lettersGuessed.sort(), wordSplit.sort())) {
                     alert("Congratulations, you've won! :)");
+                    location.reload();
+                    return false;
                 }
             }
         }
         if (!letterAdded) {
-            if (guessesLeft <= 1) 
+            if (guessesLeft <= 1) {
                 alert("You've lost! :( Wanna try again?");
+                location.reload();
+                return false;
+            }
             else {
                 guessesLeft -= 1;
                 addColorToKey(addedLetter, "red-background");
